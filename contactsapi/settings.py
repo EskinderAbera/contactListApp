@@ -41,20 +41,19 @@ INSTALLED_APPS = [
     'rest_framework',
     'authentication',
     'contacts',
-    'rest_framework.authtoken',
-    'drf_yasg',
+    'rest_framework.authtoken'
 ]
 
 
-SWAGGER_SETTINGS = {
-    'SECURITY_DEFINITIONS': {
-        "Auth Token eg [Bearer (JWT) ]": {
-            "type": "apiKey",
-            "name": "Authorization",
-            "in": "header"
-        }
-    }
-}
+# SWAGGER_SETTINGS = {
+#     'SECURITY_DEFINITIONS': {
+#         "Auth Token eg [Bearer (JWT) ]": {
+#             "type": "apiKey",
+#             "name": "Authorization",
+#             "in": "header"
+#         }
+#     }
+# }
 
 
 REST_FRAMEWORK = {
