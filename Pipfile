@@ -9,6 +9,7 @@ djangorestframework = "*"
 django-heroku = "*"
 gunicorn = "*"
 pyjwt = "*"
+django-cors-headers = "*"
 
 [dev-packages]
 

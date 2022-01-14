@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'authentication',
     'contacts',
-    'rest_framework.authtoken'
+    'rest_framework.authtoken',
+    'corsheaders'
 ]
 
 
@@ -68,6 +69,7 @@ MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -146,6 +148,12 @@ JWT_SECRET_KEY = os.environ.get('JWT_SECRET_KEY')
 
 STATIC_URL = 'static/'
 
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:8081",
+    "http://localhost:19002",
+    "http://127.0.0.1:9000",
+]
 
 
 # Default primary key field type
