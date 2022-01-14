@@ -7,6 +7,8 @@ name = "pypi"
 django = "*"
 djangorestframework = "*"
 drf-yasg = "*"
+django-heroku = "*"
+gunicorn = "*"
 
 [dev-packages]
 
